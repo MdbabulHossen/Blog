@@ -1,0 +1,113 @@
+.postPage{
+    background-color: rgb(255,246,239);
+    background-attachment: fixed;
+}
+
+
+.postTitle p{
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+
+
+
+.post{
+    margin-top: 20px;
+}
+
+
+
+.post_img{
+    background-color: white;
+    background-attachment: fixed;
+}
+.post_img img{
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    background-attachment: fixed;
+   
+   
+}
+
+
+
+.post_content{
+    margin-top: 15px;
+    padding: 15px;
+    
+}
+.post_content b{
+    color: rgba(0, 0, 0, 0.486);
+    font-weight: 600;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.post_content h2{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.836);
+}
+
+.post_content h2:hover{
+    color: coral;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+
+
+
+.avatarAndCateroies{
+    
+    padding: 15px; 
+    display: flex;
+}
+.avatarAndCateroies img{
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+}
+
+.avatarAndCateroies b{
+    margin-left: 8px;
+    color: rgba(14, 15, 15, 0.514)
+;
+}
+
+.author:hover{
+    color: coral;
+    cursor: pointer;
+}
+
+
+.avBtn{
+    padding: 1px 17px;
+    border: none;
+    color: rgba(0, 0, 0, 0.438);
+    background-color: rgba(255, 127, 80, 0.082);
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 15px;
+    border-radius: 2px;
+
+}
+.avBtn:hover{
+    background-color: rgba(255, 127, 80, 0.753);
+    color: white;
+    transition: 0.1s;
+}

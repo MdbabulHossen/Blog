@@ -1,0 +1,27 @@
+.Homepage{
+    background-color: rgb(255,246,239);
+   
+   
+}
+.head{
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.head h1{
+    font-weight: 600;
+    padding:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    font-family: ' monospace';
+    line-height: 54px;
+}

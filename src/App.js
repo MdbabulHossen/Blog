@@ -1,9 +1,11 @@
-import './App.css';
+import "./App.css";
+import ContactMain from "./Contacts/ContactMain";
+
 
 function App() {
   return (
     <div className="App">
-     <h2>hello wrold</h2>
+          <ContactMain />
     </div>
   );
 }

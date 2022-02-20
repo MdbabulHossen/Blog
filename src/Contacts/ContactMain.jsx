@@ -50,7 +50,7 @@ export default class ContactMain extends Component {
         <section className={classes.contact}>
           <div className="container">
            
-           <Title />
+           <Title title="Contact"/>
 
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">

@@ -1,16 +1,10 @@
 import React, { Component } from 'react'
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import classes from './contact.module.css'
-import FooterJoin from './FooterJoin'
-import Title from './Title'
-
-// let text_area = document.getElementById('textarea');
-// let user_name = document.getElementById("name");
-// let user_email = document.getElementById('email');
-// let submit_button = document.querySelector("#send")
 
 
-export default class ContactMain extends Component {
+
+
+export default class Contact extends Component {
   
   constructor(props) {
     super(props)
@@ -50,7 +44,7 @@ export default class ContactMain extends Component {
         <section className={classes.contact}>
           <div className="container">
            
-           <Title title="Contact"/>
+          
 
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
@@ -105,7 +99,7 @@ export default class ContactMain extends Component {
             </div>
           </div>
 
-           <FooterJoin />
+         
 
           </div>
         </section>

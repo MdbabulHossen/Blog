@@ -1,0 +1,87 @@
+
+.get_latest_post_contact h2{
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 35px;
+  }
+  
+  .join_us_today{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  
+  .join_us_today input{
+    border: none;
+    outline: none;
+    width: 300px;
+    border: 1px solid lightgray;
+    margin: 7px 0px;
+    padding: 12px;
+    transition: all .3s;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .join_us_today input:focus{
+    border: 1px solid #F08E80;
+  }
+  
+  .join_us_today button{
+    padding:12px 25px;
+    border: 1px solid lightgray;
+    outline: none;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .join_us_today button:hover{
+    background-color: #F08E80;
+    border: 1px solid #F08E80;
+    color: white;
+  }
+  
+  .join_us_today div{
+    margin: 6px;
+  }
+  
+  .footer_two_item{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  @media only screen and (max-width: 500px) {
+    .join_us_today {
+      display: block;
+    }
+    .join_us_today div{
+      margin-bottom: 15px;
+    }
+    .join_us_today div button{
+      width: 100%;
+      display: block;
+    }
+    .join_us_today div input{
+      width: 100%;
+      display: block;
+    }
+  
+    .footer_two_item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+    }
+  
+  
+  
+  }

@@ -1,33 +1,38 @@
-<<<<<<< HEAD
-import './App.css';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+
 import Home from './Components/Home/Home.jsx';
+import About from './Components/Pages/About/About'
+import Elements from './Components/Pages/Elements/Elements.jsx';
+import Archive from './Components/Pages/Archive/Archive'
+import Contact from './Components/Pages/Contact/Contact.jsx';
+import Navbar from './Components/Navbar/Navbar.jsx';
+import Footer from './Components/Footer/FooterJoin.jsx';
+
+
+
 function App() {
   return (
-    <div className="App">
+    <>
+    <BrowserRouter>
+    <Navbar />
+    <Routes>
     
+    <Route path='/' element={<Home />} />
+    <Route path='/about' element={<About />} />
+    <Route path='/elements' element={<Elements />} />
+    <Route path='/archive' element={<Archive />} />
+    <Route path='/contact' element={<Contact />} />
+
+
+
+    </Routes>
+    <Footer />
+    </BrowserRouter>
 
 
 
 
-    <Home />
-=======
-import "./App.css";
-import ContactMain from "./Contacts/ContactMain";
-import ArchiveMain from "./Archive/ArchiveMain";
-
-
-function App() {
-  return (
-    <div className="App">
-          <ContactMain />
-          <br/>
-          <br/>
-          {/* this br tag will be removed when. archive & contact file add to another routing */}
-
-          <ArchiveMain />
->>>>>>> 1162d7b9ce0c46597cf7080eb0fccdc47c78753f
-    </div>
-  );
-}
-
+    
+</>
+)}
 export default App;

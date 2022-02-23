@@ -1,6 +1,10 @@
 import React, {useState} from 'react'
-import classes from './contact.module.css'
-export default function FooterJoin() {
+import classes from './Footer.module.css'
+
+
+
+
+export default function Footer() {
 
   const [joinmail, setjoinmail] = useState('');
 

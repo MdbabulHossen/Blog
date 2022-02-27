@@ -1,0 +1,32 @@
+
+.title{
+  padding: 70px 0px;
+}
+
+.title h2{
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: 'Crete Round', serif;
+}
+
+.title_under_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_under_text a{
+  text-decoration: none;
+  color: black;
+}
+
+.title_under_text a:hover{
+  text-decoration: underline;
+}
+
+.title_under_text li{
+  margin-left: 10px;
+  color: #757370;
+
+}

@@ -60,14 +60,21 @@
     font-weight: 600;
     font-size: 24px;
     color: rgba(0, 0, 0, 0.836);
+    text-decoration: none;
+
 }
 
 .post_content h2:hover{
     color: coral;
     cursor: pointer;
     transition: 0.2s;
+    text-decoration: none;
 }
 
+
+.h2Link:hover{
+    text-decoration: none;
+}
 
 
 
@@ -81,6 +88,7 @@
     width: 30px;
     height: 30px;
     border-radius: 10%;
+    cursor: pointer;
 }
 
 .avatarAndCateroies b{
@@ -89,6 +97,9 @@
 ;
 }
 
+.author{
+    margin-left: 5px;
+}
 .author:hover{
     color: coral;
     cursor: pointer;
@@ -110,4 +121,104 @@
     background-color: rgba(255, 127, 80, 0.753);
     color: white;
     transition: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+/* single post for  */
+
+
+.singlePost{
+background-color: rgba(250, 235, 215, 0.527);
+padding-top: 100px;
+}
+
+.header{
+    padding: 0px 100px;
+  
+    
+}
+.header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.avatarAndCateroies{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.headerImg img{
+    width: 100%;
+}
+
+.fristContent{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 20px;
+}
+.fristContent b{
+    color: rgba(0, 0, 0, 0.61);
+    font-weight: 500;
+    padding-top: 50px;
+    line-height: 30px;
+}
+
+.fristContent h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.fristContent img{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lastinPost{
+    margin-top: 30px;
+}
+.lastinPost b{
+    margin-right: 20px;
+}
+.lastinPost button{
+    border: none;
+    background-color: white;
+    padding: 6px 19px;
+    margin-left: 5px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.589);
+    
+}
+.lastinPost button:hover{
+    color: rgba(255, 127, 80, 0.658);
+}
+
+
+@media screen and (max-width:1020px) {
+
+    .header{
+        padding: 0px;
+    }
+    .header h1{
+        font-size: 33px;
+    }
+    .avatarAndCateroies{
+        display: block;
+    }
+    .avatarAndCateroies b{display: inline;
+        margin-left: 10px;
+    }
 }

@@ -1,0 +1,40 @@
+.paginationBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   list-style: none;
+   
+  background-color: rgb(255,246,239);
+ padding: 80px;
+}
+
+
+
+
+.paginationBtn a{
+    padding: 13px 18px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.768);
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.paginationBtn a:hover{
+    color: white;
+    background-color: rgba(255, 127, 80, 0.857);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.activedclass{
+    color: white;
+}
+.activedclass a{
+    background-color: rgba(255, 127, 80, 0.857);
+    color:white
+}
+

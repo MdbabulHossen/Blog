@@ -68,7 +68,8 @@ export default class Contact extends Component {
                   <textarea 
                     placeholder='Write Something' 
                     onChange={handleTextAreaChange}
-                    required>
+                    required
+                    className={classes.textArea}>
                   </textarea>
 
                   <input type="text" 

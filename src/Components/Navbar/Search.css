@@ -1,0 +1,65 @@
+.search{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    left: 0px;
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    padding:20px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.7s;
+    
+}
+
+.inputandCross{
+    display: flex;
+}
+.inputandCross input{
+    border: none;
+    width:100%;
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 1px solid coral;
+    
+}
+.inputandCross input:focus{
+    border: none;
+    outline: none;
+    padding-bottom: 15px;
+    border-bottom: 1px solid coral;
+}
+
+.CrossIcon{
+    color: rgb(255, 127, 80);
+    cursor: pointer;
+}
+
+.searchBtn button{
+    padding: 1px 17px;
+    border: none;
+    color: rgba(0, 0, 0, 0.438);
+    background-color: rgba(255, 127, 80, 0.082);
+    font-weight: 600;
+    font-size: 14px;
+    margin: 5px 5px;
+    border-radius: 2px;
+
+    }
+    
+.searchBtn button:hover{
+    background-color: rgba(255, 127, 80, 0.753);
+    color: white;
+    transition: 0.1s;
+    }
+
+.postTag{
+    margin-top: 25px;
+}   
+
+.postTag h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}

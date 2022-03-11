@@ -137,6 +137,7 @@
 .singlePost{
 background-color: rgba(250, 235, 215, 0.527);
 padding-top: 100px;
+margin-top: -90px;
 }
 
 .header{

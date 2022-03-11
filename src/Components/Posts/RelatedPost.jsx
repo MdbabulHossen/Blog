@@ -55,7 +55,7 @@ export default function RelatedPost() {
                 <div className="col-lg-6" key={index}>
                   <div className={classes.post}>
                     <div className={classes.post_img}>
-                      <img src={img1} alt="not found" />
+                      <img src={post.imgsrc} alt="not found" />
                     </div>
 
                     <div className={classes.post_content}>

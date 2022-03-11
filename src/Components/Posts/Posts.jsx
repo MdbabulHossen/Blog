@@ -78,7 +78,7 @@ export default function Posts() {
                     <div className={classes.post}>
                       <div className={classes.post_img}>
                         <Link to={`/post/${post.id}`}>
-                          <img src={img1} alt="not found" />
+                          <img src={post.imgsrc} alt="not found" />
                         </Link>
                       </div>
 
@@ -101,7 +101,7 @@ export default function Posts() {
 
                       <div className={classes.avatarAndCateroies}>
                         <img
-                          src={author}
+                          src={post.author_img}
                           alt=""
                           onClick={() => authorFilter(post.author)}
                         />

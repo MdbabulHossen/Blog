@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import classes from "./Footer.module.css";
 import { Link,useNavigate } from "react-router-dom";
+
+
+
 export default function Footer() {
   const Navigate=useNavigate();
   const [joinmail, setjoinmail] = useState("");
@@ -16,6 +19,7 @@ export default function Footer() {
   const handleJoinSubmit = (e) => {
     console.log(joinmail);
     e.preventDefault();
+    Navigate("/archive")
   };
   return (
     <div className={classes.footer}>
@@ -23,7 +27,7 @@ export default function Footer() {
         <div className={classes.get_latest_post_contact}>
           <h2>Get latest posts delivered right to your inbox</h2>
 
-          <form action="" onSubmit={handleJoinSubmit}>
+          <form  onSubmit={handleJoinSubmit}>
             <div className={classes.join_us_today}>
               <div>
                 <input

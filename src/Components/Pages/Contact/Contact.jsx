@@ -1,39 +1,43 @@
-import React, { Component } from "react";
+
+
 import classes from "./contact.module.css";
 import Title from "../../HeaderTitle/Title";
+import { useNavigate } from "react-router-dom";
 
-export default class Contact extends Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      names: "",
-      email: "",
-      textArea: "",
-    };
-  }
 
-  render() {
-    let { names, email, textArea } = this.state;
+import React, { useState } from 'react'
 
-    const handleNameChange = (e) => {
-      this.setState({ names: e.target.value });
-    };
+ const state = {
+  names: "",
+  email: "",
+  textArea: "",
+};
 
-    const handleEmailChange = (e) => {
-      this.setState({ email: e.target.value });
-    };
 
-    const handleTextAreaChange = (e) => {
-      this.setState({ textArea: e.target.value });
-    };
+
+export default function Contact() {
+  const Navigate=useNavigate();
+   const [user,setUser]=useState (state)
+
+   const handleNameChange=(e)=>{
+     setUser({...user,[e.target.name]:e.target.value})
+   }
 
     const handleSubmit = (e) => {
-      console.log(names, email, textArea);
+      
       e.preventDefault();
-    };
+      Navigate("/")
+  
+    }
 
-    return (
+  return (
+    
+
+
+
+
+    
       <div>
         <section className={classes.contact}>
           <div className="container">
@@ -65,13 +69,15 @@ export default class Contact extends Component {
               </div>
 
               <div className="col-lg-6 col-md-6 col-12">
-                <form action="" onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit}>
                   <div className={classes.contact_inner_item}>
                     <h3 className="mb-3">Contact form</h3>
                     <div className={classes.contact_inputs_item}>
                       <textarea
                         placeholder="Write Something"
-                        onChange={handleTextAreaChange}
+                        onChange={handleNameChange}
+                        name="textArea"
+                        value={user.textArea}
                         required
                       ></textarea>
 
@@ -79,7 +85,8 @@ export default class Contact extends Component {
                         type="text"
                         placeholder="Enter Your Name Here"
                         id="name"
-                        value={this.names}
+                        value={user.names}
+                        name="names"
                         onChange={handleNameChange}
                         required
                       />
@@ -88,11 +95,13 @@ export default class Contact extends Component {
                         type="email"
                         placeholder="Email address"
                         id="email"
-                        onChange={handleEmailChange}
+                        name="email"
+                        value={user.email}
+                        onChange={handleNameChange}
                         required
                       />
 
-                      <button id="send" type="submit">
+                      <button  type="submit">
                         Send <i className="fa fa-paper-plane mx-2"></i>
                       </button>
                     </div>
@@ -103,6 +112,12 @@ export default class Contact extends Component {
           </div>
         </section>
       </div>
-    );
-  }
+ 
+  
+
+
+
+  )
+
+
 }

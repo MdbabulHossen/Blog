@@ -8,7 +8,9 @@ import Contact from './Components/Pages/Contact/Contact.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
 import Footer from './Components/Footer/FooterJoin.jsx';
 import Post from './Components/Posts/Post.jsx';
-
+import './App.css'
+import FourofFour from './Components/Pages/404/FourOfFour.jsx';
+import Privacy from './Components/Privacy/Privacy.jsx';
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
     <Route path='/archive' element={<Archive />} />
     <Route path='/contact' element={<Contact />} />
     <Route path={'/post/:id'} element={<Post />} />
+    <Route path={'/four'} element={<FourofFour />} />
+    <Route path={'/privacy'} element={<Privacy />} />
 
 
     </Routes>

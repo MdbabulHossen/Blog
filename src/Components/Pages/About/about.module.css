@@ -1,0 +1,57 @@
+.about{
+  background-color: #FFF6EF;
+ 
+}
+
+.about_header{
+  text-align: center;
+  font-family: 'Crete Round', serif;
+  padding: 10px 10px 50px 10px;
+  font-size: 32px;
+  font-weight:500;
+  color: black;
+}
+
+.designer_img img:hover{
+  transform: scale(1.02);
+}
+.designer_img img{
+  width: 100%;
+  border-radius: 20px 0px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.designer_img{
+  margin-bottom: 30px;
+}
+
+.about_text{
+  text-align: justify;
+  padding: 40px 20px;
+  font-size: 20px;
+}
+
+.our_writters h2{
+  font-family: 'Crete Round', serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 70px;
+  padding-top: 20px;
+}
+
+.writer_img{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.writer_img img{
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+}
+
+.writer_img h3{
+  font-family: 'oswald';
+}

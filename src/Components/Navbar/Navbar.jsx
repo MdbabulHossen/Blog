@@ -63,7 +63,7 @@ export default function Navbar() {
        
          <Link to={'/archive'} className="nav-link">
          <li className="nav-item">
-           Archive
+           Posts
          </li>  
         </Link>
        

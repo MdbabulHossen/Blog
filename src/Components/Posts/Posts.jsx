@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import "./Pagination.css";
 import Pagination from "./Pagination";
 
+
 export default function Posts() {
   const [posts, setPosts] = useState([]);
 
@@ -21,6 +22,7 @@ export default function Posts() {
     };
     fetchData();
   }, []);
+
 
   // for categories filtering...
   const categoryFilter = (catItem) => {
@@ -54,14 +56,21 @@ export default function Posts() {
   };
   // it is for pagination end
 
+
   return (
     <>
       <div className={classes.postPage}>
         <div className={classes.postTitle}>
           <p>Recent posts</p>
         </div>
+       
+
+    
+   
+
         <div className="container">
           <div className="row">
+
             {posts
               .map((post, index) => {
                 return (
@@ -131,7 +140,12 @@ export default function Posts() {
           </div>
         </div>
       </div>
+
+
       <Pagination pageCount={pageCount} changeHan={changeHan} />
+
+      
+
     </>
   );
 }

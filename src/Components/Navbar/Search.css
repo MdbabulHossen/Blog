@@ -63,3 +63,7 @@
     font-weight: 600;
     margin-bottom: 15px;
 }
+
+.searchIcontop{
+    position: fixed;
+}

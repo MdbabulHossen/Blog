@@ -17,15 +17,17 @@ export default function Post() {
 
   useEffect(() => {
     const fecthData = async () => {
-      const response = await axios.get(`http://localhost:5000/post/${id}`);
+      const devEnv=process.env.NODE_ENV !== "production";
+      const response = await axios.get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com"}/${id}`);
       setPosts(response.data);
     };
     fecthData();
   }, []);
 
   const authorFilter = async (authorItem) => {
+    const devEnv=process.env.NODE_ENV !== "production";
     return await axios
-      .get(`http://localhost:5000/post?author=${authorItem}`)
+      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/"}?author=${authorItem}`)
       .then((res) => {
         setPosts(res.data);
       });

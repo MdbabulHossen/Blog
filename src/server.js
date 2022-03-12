@@ -4,7 +4,7 @@ const router=jsonServer.router("./db.json");
 const middleware=jsonServer.defaults({
     static:"./build",
 });
-
+const cors=require("cors")
 const port=5000;
 server.use(middleware);
 server.use(jsonServer.rewriter({
@@ -12,6 +12,7 @@ server.use(jsonServer.rewriter({
 }));
 
 server.use(router);
+server.use(cors())
 server.listen(port,()=>{
     console.log(`server is running on ${port}`);
 })

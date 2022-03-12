@@ -14,7 +14,8 @@ export default function RelatedPost() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const respone = await axios.get("http://localhost:5000/post");
+      const devEnv=process.env.NODE_ENV !== "production";
+      const respone = await axios.get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com"}`);
       console.log(respone.data);
       setPosts(respone.data);
     };
@@ -22,8 +23,9 @@ export default function RelatedPost() {
   }, []);
 
   const categoryFilter = (catItem) => {
+    const devEnv=process.env.NODE_ENV !== "production";
     return axios
-      .get(`http://localhost:5000/post?categories=${catItem}`)
+      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com"}?categories=${catItem}`)
       .then((respone) => {
         setPosts(respone.data);
       })
@@ -33,8 +35,9 @@ export default function RelatedPost() {
   };
 
   const authorFilter = async (authorItem) => {
+    const devEnv=process.env.NODE_ENV !== "production";
     return await axios
-      .get(`http://localhost:5000/post?author=${authorItem}`)
+      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com"}?author=${authorItem}`)
       .then((res) => {
         setPosts(res.data);
       });

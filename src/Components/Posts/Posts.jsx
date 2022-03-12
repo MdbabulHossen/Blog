@@ -2,8 +2,6 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import classes from "./Post.module.css";
-import img1 from "../images/02.jpg";
-import author from "../images/Thomas.jpg";
 import AccessTimeRoundedIcon from "@mui/icons-material/AccessTimeRounded";
 import { Link } from "react-router-dom";
 import "./Pagination.css";
@@ -16,7 +14,11 @@ export default function Posts() {
   // for see posts
   useEffect(() => {
     const fetchData = async () => {
-      const respone = await axios.get("http://localhost:5000/post");
+
+      const devEnv=process.env.NODE_ENV !== "production";
+     
+
+      const respone = await axios.get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/"}`);
       console.log(respone.data);
       setPosts(respone.data);
     };
@@ -26,8 +28,11 @@ export default function Posts() {
 
   // for categories filtering...
   const categoryFilter = (catItem) => {
+
+    const devEnv=process.env.NODE_ENV !== "production";
+
     return axios
-      .get(`http://localhost:5000/post?categories=${catItem}`)
+      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/"}?categories=${catItem}`)
       .then((respone) => {
         setPosts(respone.data);
       })
@@ -38,8 +43,10 @@ export default function Posts() {
 
   // for author post filtering
   const authorFilter = async (authorItem) => {
+    const devEnv=process.env.NODE_ENV !== "production";
+
     return await axios
-      .get(`http://localhost:5000/post?author=${authorItem}`)
+      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/"}?author=${authorItem}`)
       .then((res) => {
         setPosts(res.data);
       });

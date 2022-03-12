@@ -18,7 +18,7 @@ export default function Posts() {
       const devEnv=process.env.NODE_ENV !== "production";
      
 
-      const respone = await axios.get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/"}`);
+      const respone = await axios.get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/post"}`);
       console.log(respone.data);
       setPosts(respone.data);
     };
@@ -32,7 +32,7 @@ export default function Posts() {
     const devEnv=process.env.NODE_ENV !== "production";
 
     return axios
-      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/"}?categories=${catItem}`)
+      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/post"}?categories=${catItem}`)
       .then((respone) => {
         setPosts(respone.data);
       })

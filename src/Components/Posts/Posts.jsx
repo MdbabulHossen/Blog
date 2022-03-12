@@ -18,7 +18,7 @@ export default function Posts() {
       const devEnv=process.env.NODE_ENV !== "production";
      
 
-      const respone = await axios.get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/post"}`);
+      const respone = await axios.get(`${devEnv ? "http://localhost:5000/post": "https://reactwithblog.herokuapp.com/post"}`);
       console.log(respone.data);
       setPosts(respone.data);
     };

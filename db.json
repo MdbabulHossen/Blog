@@ -1,0 +1,224 @@
+
+{
+  "post":[
+    {
+        "id":"1",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/09.jpg",
+        "title":"The AGI hype train is running out of steam",
+        "description":"The AGI hype train has hit some heavy traffic. While futurists and fundraisers used to make bullish predictions about artificial general intelligence,...",
+        "author":"Thomas",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/thomas-macaulay.jpg",
+        "categories":["Machine"]
+    },
+    {
+        "id":"2",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/06.jpg",
+        "title":"Creating an object that travels at 1% the speed of light?",
+        "description":"Light is fast. In fact, it is the fastest thing that exists, and a law of the universe is that nothing can move faster than light. Light travels at …",
+        "author":"Chris",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/chris-impey.jpg",
+        "categories":["Life","Lighting"]
+    },
+    {
+        "id":"3",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/05.jpg",
+        "title":"Everything you wanted to know about the metaverse",
+        "description":"In the wake of Facebook rebranding as Meta, reflecting its focus on the “metaverse”, Microsoft has now announced it, too, will launch into this space. …",
+        "author":"Emma",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/emma-hazel.jpg",
+        "categories":["life"]
+        
+    },
+    {
+        "id":"4",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/01.jpg",
+        "title":"How to hire a developer straight out of bootcamp __ Without getting burned",
+        "description":"There’s a worldwide talent shortage in software development, and nearly one-third of hiring managers have hired someone from a coding bootcamp to help …",
+        "author":"Chris",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/chris-impey.jpg",
+        "categories":["Lifestyle","Startups"]
+        
+    },
+    {
+        "id":"5",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/08.jpg",
+        "title":"Why developers are so divided over WordPress",
+        "description":"After seeing WordPress top the most dreaded platform on Stack Overflow’s Developer Survey for two years in a row (2019 and 2020), a few weeks ago we …",
+        "author":"Thomas",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/thomas-macaulay.jpg",
+        "categories":["Work","lifestyle"]
+        
+    },
+    {
+        "id":"6",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/02.jpg",
+        "title":"Why everyone is taking about ` green steel at COP26",
+        "description":"Among the rhetoric of climate change bingo and platitudes, there’s a term I’ve been hearing a lot at COP26 this week — green steel. But what is it, …",
+        "author":"Thomas",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/thomas-macaulay.jpg",
+        "categories":["lifestyle"]
+        
+    },
+    {
+        "id":"7",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/04.jpg",
+        "title":"I work 5 hours a day, and I’ve never been more productive",
+        "description":"Something’s very wrong with the traditional 9 to 5: it doesn’t work. Scandinavian countries dominate the World Happiness Report — Norway being the …",
+        "author":"Chris",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/chris-impey.jpg",
+        "categories":["Work","lifestyle"]
+        
+    },
+    {
+        "id":"8",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/08.jpg",
+        "title":"3 reasons why sodium-ion batteries may dethrone lithium",
+        "description":"Lithium-ion batteries have played a vital role in the development of electric vehicles and we love them for that. But at the same time, lithium is …",
+        "author":"Emma",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/emma-hazel.jpg",
+        "categories":["Machine"]
+        
+    },
+    {
+        "id":"9",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/09.jpg",
+        "title":"Gig startups want you to believe they can replace your job — don’t fall for it",
+        "description":"Don’t quit your day job just yet. That’s the message that should be implied — if not explicitly stated — to every applicant of every gig and creator …",
+        "author":"Chris",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/chris-impey.jpg",
+        "categories":["Startups","lifestyle"]
+        
+    },
+    {
+        "id":"10",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/06.jpg",
+        "title":"simply dummy text of the printing and typesetting industry.",
+
+        "description":"Something’s very wrong with the traditional 9 to 5: it doesn’t work. Scandinavian countries dominate the World Happiness Report — Norway being the …",
+        "author":"Chris",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/chris-impey.jpg",
+        "categories":["lifestyle"]
+        
+    },
+    {
+        "id":"11",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/05.jpg",
+        "title":"I work 5 hours a day, and I’ve never been more productive",
+        "description":"Something’s very wrong with the traditional 9 to 5: it doesn’t work. Scandinavian countries dominate the World Happiness Report — Norway being the …",
+        "author":"Emma",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/emma-hazel.jpg",
+        "categories":["Work","lifestyle"]
+        
+    },
+    {
+        "id":"12",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/07.jpg",
+        "title":"Gig startups want you to believe they can replace your job — don’t fall for it",
+        "description":"Don’t quit your day job just yet. That’s the message that should be implied — if not explicitly stated — to every applicant of every gig and creator …",
+        "author":"Chris",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/chris-impey.jpg",
+        "categories":["Startups","lifestyle"]
+        
+    },
+    {
+        "id":"13",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/04.jpg",
+        "title":"simply dummy text of the printing and typesetting industry.",
+        "description":"Something’s very wrong with the traditional 9 to 5: it doesn’t work. Scandinavian countries dominate the World Happiness Report — Norway being the …",
+        "author":"Chris",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/chris-impey.jpg",
+        "categories":["lifestyle"]
+        
+    },
+    {
+        "id":"14",
+        "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/08.jpg",
+        "title":"I work 5 hours a day, and I’ve never been more productive",
+        "description":"Something’s very wrong with the traditional 9 to 5: it doesn’t work. Scandinavian countries dominate the World Happiness Report — Norway being the …",
+        "author":"Chris",
+        "author_img":"https://platol.netlify.app/qurno/assets/images/author/chris-impey.jpg",
+        "categories":["Work","lifestyle"]
+        
+    },
+    {
+      "id":"15",
+      "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/04.jpg",
+      "title":"Creating an object that travels at 1% the speed of light?",
+      "description":"Light is fast. In fact, it is the fastest thing that exists, and a law of the universe is that nothing can move faster than light. Light travels at …",
+      "author":"Chris",
+      "author_img":"https://platol.netlify.app/qurno/assets/images/author/chris-impey.jpg",
+      "categories":["Life","Lighting"]
+  },
+  {
+      "id":"16",
+      "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/08.jpg",
+      "title":"Everything you wanted to know about the metaverse",
+      "description":"In the wake of Facebook rebranding as Meta, reflecting its focus on the “metaverse”, Microsoft has now announced it, too, will launch into this space. …",
+      "author":"Emma",
+      "author_img":"https://platol.netlify.app/qurno/assets/images/author/emma-hazel.jpg",
+      "categories":["life"]
+      
+  },
+  {
+      "id":"17",
+      "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/09.jpg",
+      "title":"How to hire a developer straight out of bootcamp __ Without getting burned",
+      "description":"There’s a worldwide talent shortage in software development, and nearly one-third of hiring managers have hired someone from a coding bootcamp to help …",
+      "author":"Chris",
+      "author_img":"https://platol.netlify.app/qurno/assets/images/author/chris-impey.jpg",
+      "categories":["Lifestyle","Startups"]
+      
+  },
+  {
+      "id":"18",
+      "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/08.jpg",
+      "title":"Why developers are so divided over WordPress",
+      "description":"After seeing WordPress top the most dreaded platform on Stack Overflow’s Developer Survey for two years in a row (2019 and 2020), a few weeks ago we …",
+      "author":"Thomas",
+      "author_img":"https://platol.netlify.app/qurno/assets/images/author/thomas-macaulay.jpg",
+      "categories":["Work","lifestyle"]
+      
+  },
+  {
+      "id":"19",
+      "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/09.jpg",
+      "title":"Why everyone is taking about ` green steel at COP26",
+      "description":"Among the rhetoric of climate change bingo and platitudes, there’s a term I’ve been hearing a lot at COP26 this week — green steel. But what is it, …",
+      "author":"Thomas",
+      "author_img":"https://platol.netlify.app/qurno/assets/images/author/thomas-macaulay.jpg",
+      "categories":["lifestyle"]
+      
+  },
+  {
+      "id":"20",
+      "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/05.jpg",
+      "title":"I work 5 hours a day, and I’ve never been more productive",
+      "description":"Something’s very wrong with the traditional 9 to 5: it doesn’t work. Scandinavian countries dominate the World Happiness Report — Norway being the …",
+      "author":"Chris",
+      "author_img":"https://platol.netlify.app/qurno/assets/images/author/chris-impey.jpg",
+      "categories":["Work","lifestyle"]
+      
+  },
+  {
+      "id":"21",
+      "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/08.jpg",
+      "title":"3 reasons why sodium-ion batteries may dethrone lithium",
+      "description":"Lithium-ion batteries have played a vital role in the development of electric vehicles and we love them for that. But at the same time, lithium is …",
+      "author":"Emma",
+      "author_img":"https://platol.netlify.app/qurno/assets/images/author/emma-hazel.jpg",
+      "categories":["Machine"]
+      
+  },
+  {
+      "id":"22",
+      "imgsrc":"https://platol.netlify.app/qurno/assets/images/blog/04.jpg",
+      "title":"45 reasons why sodium-ion batteries may dethrone lithium",
+      "description":"Lithium-ion batteries have played a vital role in the development of electric vehicles and we love them for that. But at the same time, lithium is …",
+      "author":"Emma",
+      "author_img":"https://platol.netlify.app/qurno/assets/images/author/emma-hazel.jpg",
+      "categories":["Machine"]
+      
+  }
+  
+]
+}

@@ -15,10 +15,7 @@ export default function Posts() {
   useEffect(() => {
     const fetchData = async () => {
 
-      const devEnv=process.env.NODE_ENV !== "production";
-     
-
-      const respone = await axios.get(`${devEnv ? "http://localhost:5000/post": "https://reactwithblog.herokuapp.com/post"}`);
+      const respone = await axios.get("https://safe-beach-33471.herokuapp.com/post");
       console.log(respone.data);
       setPosts(respone.data);
     };
@@ -32,7 +29,7 @@ export default function Posts() {
     const devEnv=process.env.NODE_ENV !== "production";
 
     return axios
-      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/post"}?categories=${catItem}`)
+      .get(`https://safe-beach-33471.herokuapp.com/post?categories=${catItem}`)
       .then((respone) => {
         setPosts(respone.data);
       })
@@ -46,7 +43,7 @@ export default function Posts() {
     const devEnv=process.env.NODE_ENV !== "production";
 
     return await axios
-      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/"}?author=${authorItem}`)
+      .get(`https://safe-beach-33471.herokuapp.com/post?author=${authorItem}`)
       .then((res) => {
         setPosts(res.data);
       });

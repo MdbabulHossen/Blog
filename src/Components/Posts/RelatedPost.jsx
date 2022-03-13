@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import classes from "./Post.module.css";
-import img1 from "../images/02.jpg";
 import author from "../images/Thomas.jpg";
 import AccessTimeRoundedIcon from "@mui/icons-material/AccessTimeRounded";
 import { Link } from "react-router-dom";
@@ -14,8 +13,8 @@ export default function RelatedPost() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const devEnv=process.env.NODE_ENV !== "production";
-      const respone = await axios.get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com"}`);
+      
+      const respone = await axios.get(`https://safe-beach-33471.herokuapp.com/post`);
       console.log(respone.data);
       setPosts(respone.data);
     };
@@ -23,9 +22,9 @@ export default function RelatedPost() {
   }, []);
 
   const categoryFilter = (catItem) => {
-    const devEnv=process.env.NODE_ENV !== "production";
+    
     return axios
-      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com"}?categories=${catItem}`)
+      .get(`https://safe-beach-33471.herokuapp.com/post?categories=${catItem}`)
       .then((respone) => {
         setPosts(respone.data);
       })
@@ -35,9 +34,9 @@ export default function RelatedPost() {
   };
 
   const authorFilter = async (authorItem) => {
-    const devEnv=process.env.NODE_ENV !== "production";
+    
     return await axios
-      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com"}?author=${authorItem}`)
+      .get(`https://safe-beach-33471.herokuapp.com/post?author=${authorItem}`)
       .then((res) => {
         setPosts(res.data);
       });

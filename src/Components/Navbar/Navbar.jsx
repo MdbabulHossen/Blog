@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <>
     
-<div className="container">
+
 
 
     <nav className="navbar navbar-expand-lg navbar-light fixed">
@@ -102,7 +102,7 @@ export default function Navbar() {
     
     
     
-</div>
+
     
     </>
   )

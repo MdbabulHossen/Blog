@@ -17,17 +17,17 @@ export default function Post() {
 
   useEffect(() => {
     const fecthData = async () => {
-      const devEnv=process.env.NODE_ENV !== "production";
-      const response = await axios.get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com"}/${id}`);
+     
+      const response = await axios.get(`https://safe-beach-33471.herokuapp.com/post/${id}`);
       setPosts(response.data);
     };
     fecthData();
   }, []);
 
   const authorFilter = async (authorItem) => {
-    const devEnv=process.env.NODE_ENV !== "production";
+    
     return await axios
-      .get(`${devEnv ? "http://localhost:5000/post": "https://blogsitereactjson.herokuapp.com/"}?author=${authorItem}`)
+      .get(`https://safe-beach-33471.herokuapp.com/post?author=${authorItem}`)
       .then((res) => {
         setPosts(res.data);
       });
